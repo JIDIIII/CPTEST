@@ -26,8 +26,6 @@ public class Test extends JFrame{
     private JTextField EnterUsernameTextField;
     private JTextField EnterNewPasswordTextField;
     private JButton ChangePasswordButton;
-    private JLabel HomePageDisplayName;
-    private JLabel HomePageDisplayDate;
     private JLabel STKBTNHomePage;
     private JLabel CHALBTNHomePage;
     private JLabel LOGBTNHomePage;
@@ -52,6 +50,58 @@ public class Test extends JFrame{
     private JLabel FIRESTREAK;
     private JLabel USERNAME;
     private JLabel ACCOUNTID;
+    private JProgressBar HMPageProgressBar;
+    private JLabel HMPageStreakCount;
+    private JLabel HMPageEXPCount;
+    private JLabel StreakCount;
+    private JLabel SDay;
+    private JLabel MDay;
+    private JLabel TDay;
+    private JLabel WDay;
+    private JLabel ThDay;
+    private JLabel FDay;
+    private JLabel StDay;
+    private JProgressBar ChallPageProgressBar;
+    private JPanel TimerJPanel;
+    private JButton CompleteChallengeButton;
+    private JLabel RewardLabel;
+    private JLabel RewardCount;
+    private JButton LogWorkoutButton;
+    private JCheckBox checkBox1;
+    private JCheckBox checkBox2;
+    private JCheckBox checkBox3;
+    private JCheckBox checkBox4;
+    private JCheckBox checkBox5;
+    private JCheckBox checkBox6;
+    private JCheckBox checkBox7;
+    private JCheckBox checkBox8;
+    private JCheckBox checkBox9;
+    private JCheckBox checkBox10;
+    private JCheckBox checkBox11;
+    private JCheckBox checkBox12;
+    private JCheckBox checkBox13;
+    private JCheckBox checkBox14;
+    private JCheckBox checkBox15;
+    private JCheckBox checkBox16;
+    private JComboBox ProteinComboBox;
+    private JComboBox CarbohydratesComboBox;
+    private JButton LogMealButton;
+    private JLabel HomePageDisplayName;
+    private JLabel HomePageDisplayDate;
+    private JButton SignOutButton;
+    private JLabel CPassAccPage;
+    private JLabel AppFBAccPage;
+    private JLabel CheckLogAccPage;
+    private JPanel Days;
+    private JCheckBox Chall1;
+    private JCheckBox Chall2;
+    private JCheckBox Chall3;
+    private JCheckBox Chall4;
+    private JLabel ChallCount1;
+    private JLabel ChallCount2;
+    private JLabel ChallCount3;
+    private JLabel ChallCount4;
+    private JPanel Challenge;
 
 
     Test(){
@@ -174,6 +224,14 @@ public class Test extends JFrame{
                 CardLayout cl = (CardLayout) LevelUP.getLayout();
                 cl.show(LevelUP, "ForgotPass");
                 SignInForgotPassword.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+            }
+        });
+
+        SignOutButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                CardLayout cl = (CardLayout) LevelUP.getLayout();
+                cl.show(LevelUP, "SignIn");
             }
         });
     }
