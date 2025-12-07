@@ -234,6 +234,14 @@ public class Test extends JFrame{
                 cl.show(LevelUP, "SignIn");
             }
         });
+        CPassAccPage.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                CardLayout cl = (CardLayout) LevelUP.getLayout();
+                cl.show(LevelUP, "ForgotPass");
+                SignInForgotPassword.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+            }
+        });
     }
 
     static void main() {
